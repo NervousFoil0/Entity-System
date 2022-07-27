@@ -1,3 +1,6 @@
 # Entity System
  Entity system implemented within a personal project.
+ 
 A small snapshot of the entity structure I created for one of my personal project. The aim for the system to allow for expandability within a short development cycle. This was achieve by layering the entity systems with a core baseEntity script handling generic functions such as damage, pathing, ragdoll and other systems. The project also requires large volumes of animations, again with expandability in mind the basic unity animator controller graph can cause issues. So a custom script was created to allow for animations to be added with limited webbing in the controller. When developing new entities such as deer I was able to implement them within less than 1 hour of work with this template.
+
+As a showcase for the implementation of experience with unity animation systems. I have included the HumanActions script. This allows for full control of the animation systems. With unusual case uses, such as the ForceAnimation function. This is used for instances where the entities animation speed is 0 which will not allow for normal transitions with crossFades. The script also utilizies the unity built in animation rigging system with dynamic IK targeting for weapons as well as object interaction.
